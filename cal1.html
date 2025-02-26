@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>Page de Connexion  </title>
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            margin: 0%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .contenaire {
+            display: flex;
+            background-color: rgb(255, 255, 255);
+           
+        }
+
+        .form {
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            flex-direction: column;
+            align-items: center;
+            width: 350px;
+            justify-content: center;
+            height: 605px;
+            margin: auto;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .fas {
+            font-size: 40px;
+            color: rgb(255, 255, 255);
+        }
+
+        .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            height: 96px;
+            background-color: #2f66ffaf;
+            margin: auto;
+            border-radius: 50%;
+        }
+
+        .btn {
+            position: relative;
+            display: block;
+            background-color: #2f66ff;
+            color: white;
+            width: 252px;
+            font-size: 17px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: auto;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid rgb(255, 255, 255);
+            transition: all 0.3s ease-in-out;
+           
+        }
+
+        .btn:hover{
+            background-color: rgb(36, 120, 247);
+            transform: scale(1);
+            box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.5);
+        }
+        .control {
+            margin: 10px;
+        }
+
+        input {
+            position: relative;
+            width: 250px;
+            height: 30px;
+            border-top: 0px;
+            border: 0px solid rgb(47, 102, 255);
+            border-bottom:1px  solid rgb(47, 102, 255) ;
+            border-radius: 1px;
+            outline: none;
+        }
+
+     
+        .form_image {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0);
+        }
+
+        .facebook a img{
+            width: 30px;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+      
+
+    
+        .google a  img {
+            width: 30px;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+       
+
+      
+        p{
+            text-align: center;
+            margin-top: 40px;
+            color: rgb(41, 41, 41);
+        }
+        h1{
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+
+        .banner {
+           
+          background-image: url('bac.png');
+          width: 690px;
+
+          
+        }
+        .banner_text{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(0, 0, 0);
+            font-size: 25px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: rgba(194, 194, 194, 0.116);
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+   
+
+    <div class="contenaire">
+        <div class="banner">
+           <div class="banner_text">
+            <h1>Connexion </h1> 
+           
+           </div>
+        </div>
+       
+        <div class="form">
+            <div>
+               
+                <div class="icon">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+         
+            <form action="">
+                <div class="control">
+
+                    <input type="text" name="username" id="username" placeholder=" Nom " required>
+                </div>
+
+                <div class="control">
+
+                    <input type="password" name="username" id="mot_passe" placeholder=" mot de passe  " required>
+                </div>
+                <button type="submit" class="btn"> se connecter  </button>
+
+                <p> ou se connecter avec  </p>
+            </form>
+            <div class="form_image">
+                <div class="google">
+                    <a href=""><img src="facebook.png" alt="image"> </a> 
+                </div>
+    
+                <div class="facebook">
+                    <a href=""> <img src="google.svg" alt="image"> </a>  
+                </div>
+            </div>
+
+          
+        </div>
+
+     
+    </div>
+
+ 
+</body>
+
+</html>
